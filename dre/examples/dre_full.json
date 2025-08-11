@@ -1,0 +1,22 @@
+{
+  "id": "dre:demo-001",
+  "source": "cre:demo-001",
+  "lineage": [
+    "cre:demo-001",
+    "dre:style-transfer-xyz"
+  ],
+  "guardrails": [
+    "showspec:clipshow/v1"
+  ],
+  "splits": [
+    {
+      "party": "acct:alice",
+      "percent": 80.0
+    },
+    {
+      "party": "acct:openip",
+      "percent": 20.0
+    }
+  ],
+  "notes": "Face/voice likeness tokens: none; synthetic b-roll only."
+}

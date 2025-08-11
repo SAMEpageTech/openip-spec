@@ -1,0 +1,16 @@
+{
+  "id": "cre:demo-001",
+  "title": "Skateboard clip at Venice",
+  "owner": "acct:alice",
+  "consents": [
+    "https://policy.example/ugc-consent/v1",
+    "https://example.com/model-release/123"
+  ],
+  "splits": [
+    {
+      "party": "acct:alice",
+      "percent": 100.0
+    }
+  ],
+  "notes": "Recorded 2024-03-01; GPS coarse location present."
+}

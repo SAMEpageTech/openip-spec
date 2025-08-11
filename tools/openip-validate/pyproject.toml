@@ -1,0 +1,9 @@
+[project]
+name = "openip-validate"
+version = "0.1.0"
+description = "CLI to validate OpenIP CRE/DRE JSON instances against schemas"
+requires-python = ">=3.8"
+dependencies = ["jsonschema>=4.0.0"]
+
+[project.scripts]
+openip-validate = "openip_validate.cli:main"

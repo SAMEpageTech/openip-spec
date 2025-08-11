@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openip.dev/schemas/dre.schema.json",
+  "title": "Derivative Rights Envelope (DRE)",
+  "type": "object",
+  "required": [
+    "id",
+    "source",
+    "lineage",
+    "guardrails",
+    "splits"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string",
+      "description": "Upstream CRE/DRE id or asset ref"
+    },
+    "lineage": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "guardrails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "References to ShowSpec or canon constraints"
+    },
+    "splits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "party",
+          "percent"
+        ],
+        "properties": {
+          "party": {
+            "type": "string"
+          },
+          "percent": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

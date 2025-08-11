@@ -1,0 +1,14 @@
+{
+  "id": "cre:demo-001",
+  "title": "Skateboard clip at Venice",
+  "owner": "acct:alice",
+  "consents": [
+    "https://policy.example/ugc-consent/v1"
+  ],
+  "splits": [
+    {
+      "party": "acct:alice",
+      "percent": 100.0
+    }
+  ]
+}

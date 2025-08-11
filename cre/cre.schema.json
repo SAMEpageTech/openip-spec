@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openip.dev/schemas/cre.schema.json",
+  "title": "Clip Rights Envelope (CRE)",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "owner",
+    "consents",
+    "splits"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable unique identifier"
+    },
+    "title": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string",
+      "description": "Rights owner or entity id"
+    },
+    "consents": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "References to consent artifacts or policy URIs"
+    },
+    "splits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "party",
+          "percent"
+        ],
+        "properties": {
+          "party": {
+            "type": "string"
+          },
+          "percent": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}
