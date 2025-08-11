@@ -3,7 +3,7 @@
 Portable, machine‑readable rights & residuals for UGC and AI derivatives.
 
 **Status:** v0.1 draft — open, royalty‑free spec.  
-**Goals:** “Clear once, monetize everywhere.”
+**Goals:** “Licnese once, monetize everywhere.”
 
 - **CRE** covers UGC clips: ownership, consents, terms, platform policy links, payout splits.  
 - **DRE** covers canon‑safe AI derivatives: ShowSpec guardrails, likeness/voice tokens, lineage, splits.
