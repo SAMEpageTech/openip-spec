@@ -1,0 +1,19 @@
+name: Validate examples
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: pip install ./tools/openip-validate
+      - name: Validate CRE examples
+        run: python -m openip_validate validate --schema cre/cre.schema.json --examples cre/examples
+      - name: Validate DRE examples
+        run: python -m openip_validate validate --schema dre/dre.schema.json --examples dre/examples
